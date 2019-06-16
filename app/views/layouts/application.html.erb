@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mars</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/fc19e69a08.js"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">MARS</h1>
+          <p class="lead">The red planet has never looked so good!.</p>
+      </div>
+    </div>
+
+    <div class="row feature text-center">
+      <div class="col-12 col-sm">
+        <h3>Wide Open Terrain</h3>
+        <br />
+          <p>Plenty of acreage for your dream ranch or beach front property! You read that right - after years of reshaping, Mars now has it's very own ocean! <p>
+      </div>
+
+      <div class="col-12 col-sm">
+        <h3>Reliable Atmosphere</h3>
+        <br />
+        <p> After many decades and many scientific breakthroughs, we have achieved natural atmosphere on Mars!</p>
+      </div>
+
+      <div class="col-12 col-sm">
+        <h3>A Strong Community</h3>
+        <br />
+        <p> Along with your fellow Martians, you will be connected by the vision of a less populated, less polluted world. A chance to start fresh. Come, be amongst friends.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+        <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>
