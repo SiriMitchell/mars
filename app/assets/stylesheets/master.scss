@@ -1,7 +1,21 @@
 @import "bootstrap";
 
 
-.container {
-  font-weight: 50;
-  font-height: 75;
+.jumbotron {
+  background: image_url('mars4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.display-4 {
+  font-weight: 75;
+  font-height: 100;
 }
